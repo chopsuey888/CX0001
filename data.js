@@ -3,11 +3,17 @@ var APP_DATA = {
     {
       "id": "floorplan",
       "name": "格局圖",
-      "panorama": "tiles/floorplan.jpg",
+      "levels": [
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1520,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
-        "fov": 1.5707963267948966
+        "fov": 1.57
       },
       "linkHotspots": [
         {
