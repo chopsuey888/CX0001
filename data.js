@@ -1,6 +1,39 @@
 var APP_DATA = {
   "scenes": [
     {
+      "id": "floorplan",
+      "name": "格局圖",
+      "type": "equirectangular",
+      "panorama": "tiles/floorplan.jpg",
+      "autoLoad": true,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "pitch": 0.1,
+          "yaw": -0.8,
+          "rotation": 0,
+          "target": "2-1"
+        },
+        {
+          "pitch": 0.1,
+          "yaw": 0.2,
+          "rotation": 0,
+          "target": "0-2"
+        },
+        {
+          "pitch": 0.1,
+          "yaw": 1.0,
+          "rotation": 0,
+          "target": "1-3"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
       "id": "0-2",
       "name": "2",
       "levels": [
@@ -115,26 +148,3 @@ var APP_DATA = {
     "viewControlButtons": false
   }
 };
-
-"floorplan": {
-  "type": "equirectangular",
-  "panorama": "tiles/floorplan.jpg",
-  "autoLoad": true,
-  "hotSpots": [
-    {
-      "pitch": 0.1,
-      "yaw": -0.5,
-      "type": "scene",
-      "text": "1",
-      "sceneId": "livingroom"
-    },
-    {
-      "pitch": 0.2,
-      "yaw": 0.8,
-      "type": "scene",
-      "text": "2",
-      "sceneId": "bedroom"
-    }
-  ]
-}
-
