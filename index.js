@@ -81,7 +81,7 @@
     var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
     var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
 
-    var scene = viewer.createScene({
+    switchScene(sceneData.scenes["floorplan"]);  // 改成預設顯示格局圖
       source: source,
       geometry: geometry,
       view: view,

@@ -115,3 +115,26 @@ var APP_DATA = {
     "viewControlButtons": false
   }
 };
+
+"floorplan": {
+  "type": "equirectangular",
+  "panorama": "tiles/floorplan.jpg",
+  "autoLoad": true,
+  "hotSpots": [
+    {
+      "pitch": 0.1,
+      "yaw": -0.5,
+      "type": "scene",
+      "text": "1",
+      "sceneId": "livingroom"
+    },
+    {
+      "pitch": 0.2,
+      "yaw": 0.8,
+      "type": "scene",
+      "text": "2",
+      "sceneId": "bedroom"
+    }
+  ]
+}
+
